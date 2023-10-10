@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    .main_box{
+      margin: 30px 10%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .row1{
+     
+      flex-basis: 35%;
+    }
+    .row2{
+     
+      flex-basis: 55%;
+    }
+    .contact_head{
+      font-size: 60px;
+    }
+    .row1 i{
+      margin-top: 30px;
+      margin-right: 15px;
+    }
+    .color{
+      color: #ff004f;
+      font-size: 20px;
+    }
+    .fa-brands{
+      font-size: 30px;
+    }
+    .left{
+      display: flex;
+      text-align: left;
+    }
+    .logo1{
+      margin-bottom: 50px;
+    }
+    .btn2{
+      margin-top: 30px;
+       padding: 12px 20px;
+      background-color: #ff004f;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+    .input_area{
+      width: 100%;
+      padding: 15px 10px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      background-color: #4c4444;
+      font-size: 20px;
+    }
+    textarea{
+      font-size: 20px;
+      width: 100%;
+      height: 170px;
+      border-radius: 10px;
+      background-color: #4c4444;
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="header">
+    <nav class="nav">
+      <a href="index.html"><img src="image/name2.jpg" alt="" class="logo"></a>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Servises</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="text_box">
+      <p>Programmer</p>
+      <h1>Hey, I'm <span>Sarvesh</span><br> Singh from Bihar in India.</h1>
+    </div>
+  </section>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about_col_1">
+          <img src="image/about.png" alt="">
+        </div>
+        <div class="about_col_2">
+          <h2 class="sub_title">About Me</h2>
+          <p>I am a student of the BCA Course from the dev bhoomi uttrakhand university.
+            I have knowledge about the three programming language like c , c++ and Java.
+            In the another hand i know the very well about the developement part like HTML , CSS ,
+            javascript ect. I love to explore various technologies and framework. I know the data structure vey well .
+            I solve the aproximate 500 question from the data structure with the many platform.</p>
+          <div class="tab_title">
+            <p class="tab_link active_link" onclick="opentab('skills')">Skill</p>
+            <p class="tab_link" onclick="opentab('achievement')">Achievement</p>
+            <p class="tab_link" onclick="opentab('eduction')">Eduction</p>
+          </div>
+          <div class="tab_content active_tab" id="skills">
+            <ul>
+              <li><span>Programming Language</span> <br>C, C++ and OOPS with Java</li>
+              <li><span>Web Developement</span><br>HTML, CSS , Javascript And PHP </li>
+              <li><span>Data structure And Algorithm</span><br> Sloved the 500+ Question from DSA</li>
+            </ul>
+          </div>
+          <div class="tab_content" id="achievement">
+            <ul>
+              <li><span>Clered the NTSE Exam</span> <br>Bihar government give me 1000 per month for the equction</li>
+              <li><span>Participate in Hackthone</span><br>Cleared the First round and gain the more knowledge </li>
+              <li><span>Done the intenship</span><br>On the Data science with the python and ML</li>
+            </ul>
+          </div>
+          <div class="tab_content" id="eduction">
+            <ul>
+              <li><span>2018 - 2019</span> <br>Passed my 10th class from Bihar board</li>
+              <li><span>2019 - 2021</span><br>Passed my 12th class from Bihar board </li>
+              <li><span>2021 - 2024</span><br>Doing the BCA Course from the DBUU Dehardun</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services">
+    <div class="container2">
+      <h2 class="sub_title">My Servises</h2>
+      <div class="box"> 
+        <div class="ser_col">
+          <i class="fa-solid fa-code icon"></i>
+          <h1 class="ser_head">Web Design</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias libero
+             veniam labore recusandae sint doloribus voluptas ipsam eius?</p>
+             <a href="">Learn more</a>
+        </div>
+        <div class="ser_col">
+          <i class="fa-sharp fa-solid fa-computer icon"></i>
+          <h1 class="ser_head">Programming Language</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias libero
+            veniam labore recusandae sint doloribus voluptas ipsam eius?</p>
+            <a href="">Learn more</a>
+        </div>
+        <div class="ser_col">
+          <i class="fa-solid fa-database icon"></i>
+          <h1 class="ser_head">Database</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias libero
+            veniam labore recusandae sint doloribus voluptas ipsam eius?</p>
+            <a href="">Learn more</a>
+
+        </div>
+      </div>
+   </div>
+  </div>
+
+  <section class="mywork">
+    <div class="cont">
+      <h1 id="work_head">My Works</h1>
+      <div class="work_img">
+        <div class="work">
+          <img src="image/work-1.png" alt="">
+          <div class="layer">
+            <h3>App Design</h3>
+            <p>This app is useful for every person . It help your build the confident level.</p>
+            <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="image/work-2.png" alt="">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>This app is useful for every person . It help your build the confident level.</p>
+            <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="image/work-3.png" alt="">
+          <div class="layer">
+            <h3>Video Game</h3>
+            <p>This app is useful for every person . It help your build the confident level.</p>
+            <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="" class="btn">See more</a>
+    </div>
+  </section>
+
+  <section class="contact_us">
+    <div class="main_box">
+      <div class="row1">
+        <h1 class="contact_head">Contact Me</h1>
+        <i class="fa-brands fa-telegram color"></i>
+        <span>singhji012002@gmail.com</span>
+        <br>
+        <i class="fa-solid fa-phone color"></i>
+        <span>91 7739593669</span>
+
+        <div class="logo1">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <a href="" class="btn2">Download CV</a>
+      </div>
+      <div class="row2">
+        <input type="text" placeholder="Your Name " class="input_area">
+        <input type="email" placeholder="Your Name" class="input_area">
+        <textarea placeholder="Your Massege"></textarea>
+        <a href="" class="btn2">Submit</a>
+      </div>
+    </div>
+
+  </section>
+  <script>
+    var tablinks = document.getElementsByClassName("tab_link");
+    var tabcontents = document.getElementsByClassName("tab_content");
+
+    function opentab(tabname){
+      for (tablink of tablinks) {
+        tablink.classList.remove("active_link");
+      }
+
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active_tab");
+      }
+
+      event.currentTarget.classList.add("active_link");
+
+      document.getElementById(tabname).classList.add("active_tab");
+    }
+  </script>
+
+</body>
+
+</html>
